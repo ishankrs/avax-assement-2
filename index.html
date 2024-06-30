@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitman Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hitman Game</h1>
+        <div class="wallet">
+            <button id="connectButton">Connect Wallet</button>
+            <p id="walletAddress">Wallet Address: Not Connected</p>
+        </div>
+        <div class="balance">
+            Initial Balance: <span id="balance">100</span>
+        </div>
+        <div class="contract">
+            <h2>Contract 1</h2>
+            <p>Complete the contract to earn 100 points or lose 50 points.</p>
+            <button onclick="completeContract(true)">Successful</button>
+            <button onclick="completeContract(false)">Unsuccessful</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
